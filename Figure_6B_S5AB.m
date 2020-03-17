@@ -1,16 +1,16 @@
-%% CODE FOR DISPLAYING FIGURE 6B, S6A/B (after running Network_simulations_firing_rate)
+%% CODE FOR DISPLAYING FIGURE 6B, 6D, S5a and S7b (after running Network_simulations_firing_rate)
 
 % DBS stimulation
 DBS_intensity = [80, 100, 120, 160,200,240];
 DBS_pulse_duration = [1, 1.5, 2, 2.5, 3];
 DBS_frequency = [18, 67, 130, 180];
 
-for m=3% 1:3
+for m=1:3
     
     clearvars -except m DBS_intensity DBS_pulse_duration DBS_frequency
     if m==1
         
-        % Figure 4B
+        % Figure 6B
         conditions = 'DBS';
         parameter = DBS_frequency;
         parameter_label = 'DBS_frequency';
@@ -88,13 +88,13 @@ for m=3:4
     clearvars -except m Opto_frequency Opto_intensity
     
     if m==1
-        % Figure S6A
+        % Figure 6D
         conditions = 'Opto_SOM';
         parameter = Opto_frequency;
         parameter_label = 'Opto_frequency';
         Labels = {'Control','PD','13Hz','67Hz','130Hz'};
     elseif m==2
-        % Figure S6B
+        % Figure 6D
         conditions = 'Opto_PV';
         parameter = Opto_frequency;
         parameter_label = 'Opto_frequency';
@@ -107,7 +107,7 @@ for m=3:4
         parameter_label = 'Opto_intensity';
         Labels = {'Control','PD','200 pA','400 pA','600 pA','800 pA'};
     elseif m==4
-        % Figure S7B
+        % Figure S7A
         conditions = 'Opto_PV';
         parameter = Opto_intensity;
         parameter_label = 'Opto_intensity';
