@@ -24,7 +24,7 @@ for U=1:length(type)
     if type(U)==1
         path1 = '/Volumes/LaCie 1/DBS_PAPER/DBS_NEW/Simulations_init_files/Ramping_stim';
         interesting_stimuli_index = 1:12;
-        order_stimuli =1:12; %[1,5,2,6,3,7,4,8,10,12,9,11]; % order of the stimulus similar to the display of the manuscript
+        order_stimuli =1:12; % order of the stimulus similar to the display of the manuscript
         
         % Ramping stimuli
         stimulus(1,:) = linspace(0,160,stimulus_duration/dt);
