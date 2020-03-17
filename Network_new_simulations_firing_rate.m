@@ -3,9 +3,9 @@
 % The choice of conditions can be: 'control', 'noDBS', 'DBS', 'Opto_PV' or
 % 'Opto_SOM'
 % The choice of parameters to modify : for DBS stimulation: DBS_intensity,
-% DBS_pulse duration and DBS_frequency (for recapitulating Figure 4B, Figure
+% DBS_pulse duration and DBS_frequency (for recapitulating Figure 6B, Figure
 % S5A, Figure S5B) ; for opto-stimulation: Opto_frequency (for
-% recapitulating Figure S6A and S6B)
+% recapitulating Figure 6D and S7A)
 
 
 dt = 0.05;
@@ -35,20 +35,13 @@ DBS_frequency = [18, 67, 130, 180]; %Hz
 
 
 %% Opto stimulation
-% Opto stimulation (default: 400 pA, 67 Hz, 3 ms)
-%Opto_intensity = [200, 250, 300, 350, 400, 450, 500];  %pA
-%Opto_frequency = [13, 67, 130]; %Hz
-%
-%Opto_intensity = [500];  %pA
-Opto_frequency = [13,67,130]; %Hz
-parameter = DBS_pulse_duration; % or DBS_pulse_duration or DBS_frequency or [1] (for control and PD)
-str_parameter = 'DBS_pulse_duration'; %DBS_intensity'; %'Opto_frequency'; %Opto_frequency';
-
+% Opto stimulation (default: 600 pA, 67 Hz, 3 ms)
+Opto_intensity = [200, 400, 600,800];  %pA
+Opto_frequency = [13, 67, 130]; %Hz
 
 % % Choice of parameter
-% parameter = DBS_intensity; % or DBS_pulse_duration or DBS_frequency or [1] (for control and PD)
-% str_parameter = 'DBS_intensity';
-% 
+parameter = DBS_pulse_duration; % or DBS_pulse_duration or DBS_frequency or [1] (for control and PD)
+str_parameter = 'DBS_pulse_duration'; %DBS_intensity'; %'Opto_frequency'; %Opto_frequency';
 
 av_firing_rate_PYR = zeros(length(parameter),trial_number);
 av_firing_rate_PV = zeros(length(parameter),trial_number);
