@@ -47,36 +47,14 @@ Some simulations require a long processing time (in particular “Network_simula
 - binned raster plots of pyramidal cell activity for each trial (“V_PYR_binned_PSTH” files), which will then be densified (“Sampled_new_vector_” files). The classifiers will then be trained on these densified matrices to decode stimulus identity. 
 
 The list of stimuli used for the manuscript is the following: 
+
 Constant inputs:
-1/ Constant input, 40 pA (n°1)
-
-2/ Constant input, 50pA (n°2)
-
-3/ Constant input, 70pA (n°3)
-
-4/ Constant input, 60 pA (n°20)
+1/ Constant input, 40 pA (n°1) ; 2/ Constant input, 50pA (n°2) ; 3/ Constant input, 70pA (n°3) ; 4/ Constant input, 60 pA (n°20)
 
 Ramping stimuli
-1/ Ramp de 0 à 160 pA (n°4)
+1/ Ramp from 0 to 160 pA (n°4) ; 2/ Ramp from 160 to 0 pA (n°5) ; 3/ Ramp from 0 to 120 pA (n°6) ; 4/ Ramp from 120 to 0 pA (n°7) ; 5/ Ramp from 0 to 80 pA (n°8) ; 6/ Ramp from 80 to 0 pA (n°9) ; 7/ Ramp from 0 to 40 pA (n°10) ; 8/ Ramp from 40 to 0 pA (n°11)
 
-2/ Ramp de 160 à 0 pA (n°5)
-
-3/ Ramp de 0 à 120 (n°6) 
-
-4/ Ramp de 120 à 0 (n°7)
-
-5/ Ramp de 0 à 80 pA (n°8)
-6/ Ramp de 80 à 0 pA (n°9)
-7/ Ramp de 0 à 40 pA (n°10)
-8/ Ramp de 40 à 0 pA (n°11)
 OU noise
-1/ OU_noise_1 (n°12)
-2/ OU_noise_2 (n°13)
-3/ OU_noise_3 (n°14)
-4/ OU_noise_4 (n°15)
-5/ OU_noise_5 (n°16)
-6/ OU_noise_6 (n°17)
-7/ OU_noise_7 (n°18)
-8/ OU_noise_8 (n°19)
+1/ OU_noise_1 (n°12) ; 2/ OU_noise_2 (n°13) ; 3/ OU_noise_3 (n°14) ; 4/ OU_noise_4 (n°15) ; 5/ OU_noise_5 (n°16) ; 6/ OU_noise_6 (n°17) ; 7/ OU_noise_7 (n°18) ; 8/ OU_noise_8 (n°19)
 
 
