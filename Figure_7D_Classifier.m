@@ -56,7 +56,7 @@ for U=1:4
     elseif U==4
         M=M4;
     end
-    [p,tbl,stats] = kruskalwallis([M{1}(:) M{2}(:) M{3}(:) M{4}(:) M{5}(:)],[],'on');
+    [p,tbl,stats] = anova1([M{1}(:) M{2}(:) M{3}(:) M{4}(:) M{5}(:)],[],'on');
     c=multcompare(stats);
     Summary_Stats{U} = c(:,[1,2,6]);
 end
